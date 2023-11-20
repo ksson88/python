@@ -60,4 +60,74 @@ print("I ate {number} apples. so I was sick for {day} days.".format(number=10, d
 print("I ate {0} apples. so I was sick for {day} days".format(10, day=10))
 
 # 왼쪽 정렬
-"{0:<10}".format("hi")
+print("{0:<10}".format("hi"))
+
+# 오른쪽 정렬
+print("{0:>10}".format("hi"))
+
+# 가운데 정렬
+print("{0:^10}".format("hi"))
+
+# 공백 채우기
+print("{0:=^10}".format("hi"))
+
+# 소수점 표현하기
+y = 3.1415926535897
+print("{0:0.4f}".format(y))
+
+print("{0:10.4f}".format(y))
+
+# { 와 } 문자표현
+print("{{ and }}".format())
+
+# 문자열 관련 함수
+a = "hobby"
+print("a.count('b') : ", a.count('b'))
+
+# 위치 알려주기 find
+a = "Python is the best choice"
+print("a.find('b')", a.find('b'))
+print(a.find('k'))
+
+# 위치 알려주기 index
+a = "Life is too short"
+print("a.index('t') : ", a.index('t'))
+# print("a.index('k') : ", a.index('k'))
+# index는 없으면 오류를 발생시킨다.
+
+# 문자열 삽입 join
+print('''",".join('abcd') : ''', ",".join('abcd'))
+
+# 대문자로 바꾸기
+a = "hi"
+print("a.upper()", a.upper())
+
+# 소문자로 바꾸기
+a = "HI"
+print("a.lower()", a.lower())
+
+# 왼쪽 공백 지우기 lstrip
+a = "         hi  "
+print("a.lstrip() :\n", a.lstrip())
+
+# 오른쪽 공백 지우기 rstrip
+a = "       hi        "
+print("a.rstrip() :\n", a.rstrip())
+
+
+# 양쪽 공백 지우기 strip
+a = "       hi       "
+print("a.strip() :", "\n", a.strip())
+
+# 문자열 바꾸기 replace
+a = "Life is too short"
+print("a : ", a)
+print('''a.replace("Life", "Your leg") : ''', a.replace("Life", "Your leg"))
+
+
+# 문자열 나누기 split
+print("a.split() : ", a.split())
+
+b = "a:b:c:d"
+print("b : ", b)
+print("b.split(':')", b.split(':'))
